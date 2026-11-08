@@ -822,3 +822,205 @@ body {
 .timeline-desc a:hover {
   color: var(--color-point-hover);
 }
+
+/* Print page (print.html) — 화면에서 보이는 안내 영역 */
+
+.print-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.print-toolbar-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-subtext);
+}
+
+.print-toolbar-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.print-toolbar .btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.print-loading {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  color: var(--color-subtext);
+}
+
+.print-projects {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 64px 24px 0;
+}
+
+.print-project + .print-project {
+  margin-top: 64px;
+  padding-top: 64px;
+  border-top: 1px solid var(--color-border);
+}
+
+.print-project .detail-header,
+.print-project .detail-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Print — 모든 페이지 공통 인쇄 스타일 */
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm 12mm;
+  }
+
+  body {
+    background: #ffffff;
+    font-size: 12px;
+  }
+
+  /* 화면 전용 요소 숨김 */
+  .site-nav,
+  .scroll-progress,
+  .print-toolbar,
+  .about-cta,
+  .detail-back,
+  .intro-enter {
+    display: none !important;
+  }
+
+  /* 스크롤 등장 애니메이션 없이 모두 표시 */
+  [data-reveal],
+  .project-card,
+  .detail-section,
+  .skill-card,
+  .contact-card,
+  .timeline-item {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .project-card,
+  .project-card:hover {
+    box-shadow: none !important;
+  }
+
+  /* 여백 축소 */
+  .about-hero,
+  .about-section,
+  .page-header,
+  .detail-header,
+  .detail-body,
+  .print-projects {
+    padding-top: 24px;
+  }
+
+  /* 카드·섹션이 페이지 경계에서 잘리지 않게 */
+  .project-card,
+  .detail-section,
+  .skill-card,
+  .contact-card,
+  .timeline-item {
+    break-inside: avoid;
+  }
+
+  /* 프로젝트는 각각 새 페이지에서 시작 */
+  .print-projects,
+  .print-project + .print-project {
+    break-before: page;
+  }
+
+  .print-project + .print-project {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  /* 종이에서는 링크를 누를 수 없으므로 주소를 함께 표시 */
+  a.detail-github[href^="http"]::after,
+  a.card-github[href^="http"]::after {
+    content: " " attr(href);
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--color-subtext);
+    word-break: break-all;
+  }
+
+  a.contact-card[href^="http"]::after {
+    content: attr(href);
+    display: block;
+    margin-top: 4px;
+    font-size: 10px;
+    color: var(--color-subtext);
+    word-break: break-all;
+  }
+
+  /* 제목이 페이지 맨 아래에 홀로 남지 않게 */
+  .about-section-title,
+  .detail-section-title,
+  .detail-title {
+    break-after: avoid;
+  }
+
+  /* 화면용 넓은 여백을 인쇄용으로 축소 */
+  .about-section {
+    padding-top: 32px;
+  }
+
+  .about-section-last,
+  .detail-body {
+    padding-bottom: 0;
+  }
+
+  .detail-body {
+    gap: 28px;
+    margin-top: 20px;
+  }
+
+  .detail-title {
+    font-size: 30px;
+  }
+
+  .detail-section-title {
+    font-size: 17px;
+  }
+
+  .detail-list {
+    gap: 6px;
+  }
+
+  .detail-list li {
+    font-size: 12.5px;
+  }
+
+  /* 링크는 한 줄에 하나씩 */
+  .detail-github-list {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  /* 2열 카드는 인쇄 폭에서도 2열 유지 */
+  .contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-grid.is-two-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
