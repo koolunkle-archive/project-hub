@@ -19,6 +19,10 @@ const PROJECTS = {
       "분석 요청은 작업 ID와 함께 202 Accepted를 즉시 반환하는 비동기 구조로 처리하고, 진행률은 SSE로, 완료·실패는 FCM으로 전달했습니다.",
       "블루-그린 배포 중에도 진행 중인 작업이 끊기지 않도록 작업 상태를 서버 밖 Redis에 두고, Redis Pub/Sub로 모든 서버 인스턴스의 SSE에 진행 이벤트를 전달했습니다.",
     ],
+    retrospective: [
+      "OCR을 서버에서 직접 추론하던 구조를 외부 OCR API와 LLM으로 바꾸면서, 직접 구현할 부분과 외부 서비스에 맡길 부분을 정확도·운영 부담·비용 기준으로 나눠 판단하게 되었습니다.",
+      "Android 앱만 만들던 시야에서 벗어나 서버, CI/CD, 무중단 배포까지 직접 다뤄 보며, 기능 하나가 배포되어 사용자에게 닿기까지의 전체 흐름을 이해하게 되었습니다.",
+    ],
     github: [
       { label: "Android", url: "https://github.com/koolunkle-yak-allim/yak-allim-android" },
       { label: "Server", url: "https://github.com/koolunkle-yak-allim/yak-allim-server" },
