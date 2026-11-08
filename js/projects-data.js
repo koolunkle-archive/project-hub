@@ -92,32 +92,4 @@ const PROJECTS = {
     ],
     github: null,
   },
-  "cinema-storage": {
-    title: "Cinema Storage",
-    titleEn: null,
-    category: "러닝 프로젝트",
-    periodLabel: "미래IT캠퍼스 · 팀 프로젝트",
-    description:
-      "영화 정보와 사용자 리뷰를 공유하는 앱으로, 회원 관리와 리뷰 CRUD 기능을 Firebase 기반으로 구현했습니다.",
-    tags: ["Firebase", "Realtime Database"],
-    contributions: [
-      "Firebase Realtime Database 연동 및 데이터 구조 설계",
-      "리뷰 CRUD 기능 구현",
-      "회원 관리(가입/로그인) 기능 구현",
-    ],
-    github:
-      "https://github.com/koolunkle/native-mobile-archive/tree/main/android/training/mirae-it-campus/team-projects/cinema-storage",
-  },
-  "gudok-in": {
-    title: "구독in",
-    titleEn: null,
-    category: "러닝 프로젝트",
-    periodLabel: "넵플러스IT아카데미 · 팀 프로젝트",
-    description:
-      "세상의 모든 구독 상품을 탐색하고 장바구니에 담아 구독할 수 있는 커머스 앱으로, 로그인부터 장바구니까지의 흐름을 구현했습니다.",
-    tags: ["소셜 로그인", "장바구니"],
-    contributions: ["소셜 로그인 기능 구현", "장바구니 기능 구현"],
-    github:
-      "https://github.com/koolunkle/native-mobile-archive/tree/main/android/training/nepp-plus/team-projects/gudok-in",
-  },
 };

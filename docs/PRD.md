@@ -45,7 +45,7 @@
 
 #### 카드에 포함될 정보
 
-- 카테고리 태그 (개인 프로젝트 / 커리어 프로젝트 / 러닝 프로젝트)
+- 카테고리 태그 (개인 프로젝트 / 커리어 프로젝트)
 - 프로젝트 진행 기간 (예: 2024.12 – 2025.03)
 - 소속/팀 정보 (팀 프로젝트인 경우, 예: "미래IT캠퍼스 · 팀 프로젝트")
 - 프로젝트명 (국문명 + 영문/코드네임 병기 가능, 예: "약올림 (Yak-Allim)")
@@ -62,8 +62,6 @@
 | 그린팔로우 (GreenFollow) | 커리어 프로젝트 | 2024.08–2024.12 | Flutter, MVVM, BLE, Google Maps | 비공개 |
 | 엠브레인 (M.Brain) | 커리어 프로젝트 | 2024.02–2024.09 | Bluetooth, MediaPlayer, CSV | 비공개 |
 | 당케 | 커리어 프로젝트 | 2023.03–2023.12 | MVVM, Health Connect, 소셜 로그인 | 비공개 |
-| Cinema Storage | 러닝 프로젝트 (팀) | - | Firebase, Realtime Database | [native-mobile-archive/.../cinema-storage](https://github.com/koolunkle/native-mobile-archive/tree/main/android/training/mirae-it-campus/team-projects/cinema-storage) |
-| 구독in | 러닝 프로젝트 (팀) | - | 소셜 로그인, 장바구니 | [native-mobile-archive/.../gudok-in](https://github.com/koolunkle/native-mobile-archive/tree/main/android/training/nepp-plus/team-projects/gudok-in) |
 
 > 프로젝트 설명 및 소속 정보(미래IT캠퍼스·넵플러스IT아카데미 팀 프로젝트 등)는 기존 초안 사이트(my-intro-sand-alpha.vercel.app) 내용을 그대로 이관합니다.
 >
@@ -79,7 +77,7 @@
 | --- | --- | --- |
 | 기본 정보 (설명, 기술스택, 기간, 카테고리) | ✅ 필수 | 리스트 카드 정보 확장 |
 | 담당 역할 및 주요 기여 내용 | ✅ 포함 | 기록된 내용 존재, 바로 반영 가능 |
-| 스크린샷/이미지 갤러리 | ⚠️ 선택적 | **커리어 프로젝트는 보안상 제외** (코드/이미지 노출 불가). 개인/러닝 프로젝트는 있는 경우에만 노출 |
+| 스크린샷/이미지 갤러리 | ⚠️ 선택적 | **커리어 프로젝트는 보안상 제외** (코드/이미지 노출 불가). 개인 프로젝트는 있는 경우에만 노출 |
 | 트러블슈팅/기술적 도전 사례 | ⚠️ 필드만 준비 | 데이터(`challenges`, `retrospective`)가 있는 프로젝트에만 섹션 노출 |
 | 배운점/회고 | ⚠️ 필드만 준비 | 데이터(`challenges`, `retrospective`)가 있는 프로젝트에만 섹션 노출 |
 | 성과/지표 | ❌ 제외 | 개인 프로젝트/MVP 단계로 노출할 지표 없음 |
@@ -99,8 +97,8 @@
 - 상태 배지: "새로운 팀을 찾고 있습니다" (현재 구직 활동 중 상태를 나타냄, About 페이지 상단에 배치)
 - 한 줄 소개: "안녕하세요, Koolunkle입니다."
 - 소개 문구: "Kotlin · Compose 기반 Android 개발과 Spring Boot 백엔드 개발 경험을 가진 개발자입니다. 문제를 끝까지 파고들어 완성도 있는 결과물을 만드는 것을 좋아합니다."
-- 상세 소개: "동국대학교에서 식품산업관리학과를 졸업한 뒤, 여러 부트캠프 과정을 거쳐 Android 개발자로 커리어를 시작했습니다. 올리브스톤 SW R&D팀에서 안드로이드 앱을 개발했고, 이후 소프트그램에서는 OCR 솔루션 백엔드 개발을 경험하며 영역을 넓혔습니다. Kotlin과 Compose로 화면을 만드는 일에 강점이 있으며, 백엔드 영역인 Spring Boot로 관심 분야를 넓혀가고 있습니다."
-- 요약 정보: 학교(동국대학교), 전공(식품산업관리학과), 주요 분야(Android · Kotlin · Compose), 관심 분야(Spring Boot)
+- 상세 소개: "동국대학교에서 식품산업관리학과를 졸업한 뒤, 여러 부트캠프 과정을 거쳐 Android 개발자로 커리어를 시작했습니다. 올리브스톤 SW R&D팀에서 안드로이드 앱을 개발하며 그린팔로우 프로젝트에서는 Flutter로 크로스플랫폼 앱도 개발했고, 이후 소프트그램에서는 OCR 솔루션 백엔드 개발을 경험하며 영역을 넓혔습니다. Kotlin과 Compose로 화면을 만드는 일에 강점이 있으며, Spring Boot 백엔드와 Kotlin Multiplatform으로 관심 분야를 넓혀가고 있습니다."
+- 요약 정보: 학교(동국대학교), 전공(식품산업관리학과), 주요 분야(Android · Kotlin · Compose), 관심 분야(Spring Boot · Kotlin Multiplatform)
 - CTA 버튼: "프로젝트 보기", "이메일 보내기"
 
 #### 기술 스택 (Skills 섹션)
