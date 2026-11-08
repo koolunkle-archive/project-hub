@@ -856,6 +856,19 @@ body {
   font-family: inherit;
 }
 
+.print-source {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px 24px 0;
+  font-size: 13px;
+  color: var(--color-subtext);
+}
+
+.print-source a {
+  color: var(--color-point);
+  text-decoration: none;
+}
+
 .print-loading {
   max-width: 1080px;
   margin: 0 auto;

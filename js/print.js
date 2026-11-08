@@ -18,7 +18,11 @@ async function renderPrintDocument() {
     .map((data) => `<article class="print-project">${buildProjectHtml(data, { withBack: false })}</article>`)
     .join("");
 
+  // PDF에서도 최신 온라인 버전으로 찾아올 수 있도록 사이트 주소를 맨 위에 표시한다
+  // 예전 주소나 로컬에서 저장해도 대표 주소가 찍히도록 고정한다
+  const siteUrl = "https://koolunkle.vercel.app/";
   root.innerHTML = `
+    <p class="print-source">온라인 버전 · <a href="${siteUrl}">${siteUrl}</a></p>
     ${aboutHtml}
     <section class="print-projects">
       <h2 class="about-section-title print-projects-title">Projects</h2>
