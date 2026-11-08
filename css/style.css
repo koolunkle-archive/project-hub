@@ -654,6 +654,12 @@ body {
   gap: 8px;
 }
 
+/* 함께 쓰는 기술(Dart · Flutter)이 줄바꿈으로 나뉘지 않도록 한 묶음으로 배치 */
+.skill-tag-group {
+  display: flex;
+  gap: 8px;
+}
+
 /* About: contact */
 
 .contact-grid {

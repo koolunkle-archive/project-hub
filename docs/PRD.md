@@ -63,7 +63,7 @@
 | 엠브레인 (M.Brain) | 커리어 프로젝트 | 2024.02–2024.09 | Bluetooth, MediaPlayer, CSV | 비공개 |
 | 당케 | 커리어 프로젝트 | 2023.03–2023.12 | MVVM, Health Connect, 소셜 로그인 | 비공개 |
 
-> 프로젝트 설명 및 소속 정보(미래IT캠퍼스·넵플러스IT아카데미 팀 프로젝트 등)는 기존 초안 사이트(my-intro-sand-alpha.vercel.app) 내용을 그대로 이관합니다.
+> 프로젝트 설명은 기존 초안 사이트(my-intro-sand-alpha.vercel.app) 내용을 바탕으로 이관했습니다.
 >
 > 카드 클릭 시 해당 프로젝트의 상세 페이지로 이동합니다.
 
