@@ -442,13 +442,10 @@ body {
   color: var(--color-text);
 }
 
-.detail-placeholder {
-  margin-top: 16px;
-  padding: 20px 24px;
-  border: 1px dashed var(--color-border);
-  border-radius: 8px;
-  font-size: 14px;
-  color: var(--color-subtext);
+.detail-github-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
 }
 
 .detail-github {
@@ -666,8 +663,14 @@ body {
   gap: 24px;
 }
 
+/* 카드 4개(학습 기록)는 2열로 배치해 마지막 줄에 카드 하나만 남지 않게 한다 */
+.contact-grid.is-two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 @media (max-width: 720px) {
-  .contact-grid {
+  .contact-grid,
+  .contact-grid.is-two-col {
     grid-template-columns: 1fr;
   }
 }

@@ -31,9 +31,30 @@ function renderProject() {
   const contributionsHtml = data.contributions
     .map((item) => `<li>${item}</li>`)
     .join("");
-  const githubHtml = data.github
-    ? `<a class="detail-github" href="${data.github}" target="_blank" rel="noopener">GitHub ↗</a>`
+  // github: 문자열(단일 저장소) 또는 { label, url } 배열(여러 저장소)
+  const repos = Array.isArray(data.github)
+    ? data.github
+    : data.github
+      ? [{ label: "GitHub", url: data.github }]
+      : [];
+  const githubHtml = repos.length
+    ? `<div class="detail-github-list">${repos
+        .map(
+          (repo) =>
+            `<a class="detail-github" href="${repo.url}" target="_blank" rel="noopener">${repo.label} ↗</a>`,
+        )
+        .join("")}</div>`
     : `<span class="detail-github is-disabled">비공개 프로젝트 — 코드 및 이미지는 공개하지 않습니다</span>`;
+
+  // 내용이 있는 프로젝트에만 섹션을 보여준다 (문자열 배열)
+  const optionalSection = (title, items) =>
+    items && items.length
+      ? `
+      <section class="detail-section" data-reveal>
+        <h2 class="detail-section-title">${title}</h2>
+        <ul class="detail-list">${items.map((item) => `<li>${item}</li>`).join("")}</ul>
+      </section>`
+      : "";
 
   root.innerHTML = `
     <header class="detail-header">
@@ -54,15 +75,8 @@ function renderProject() {
         <ul class="detail-list">${contributionsHtml}</ul>
       </section>
 
-      <section class="detail-section" data-reveal>
-        <h2 class="detail-section-title">트러블슈팅 / 기술적 도전</h2>
-        <p class="detail-placeholder">아직 정리 중인 내용입니다. 순차적으로 업데이트할 예정입니다.</p>
-      </section>
-
-      <section class="detail-section" data-reveal>
-        <h2 class="detail-section-title">배운점 / 회고</h2>
-        <p class="detail-placeholder">아직 정리 중인 내용입니다. 순차적으로 업데이트할 예정입니다.</p>
-      </section>
+${optionalSection("트러블슈팅 / 기술적 도전", data.challenges)}
+${optionalSection("배운점 / 회고", data.retrospective)}
 
       <section class="detail-section" data-reveal>
         <h2 class="detail-section-title">GitHub</h2>

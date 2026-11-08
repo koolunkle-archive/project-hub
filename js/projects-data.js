@@ -6,7 +6,7 @@ const PROJECTS = {
     periodLabel: null,
     description:
       "복약 안내서를 OCR로 분석해 약품명·복용량·복용 일수를 자동으로 추출하고, 복용 일정에 맞춰 알림을 예약해주는 개인 프로젝트입니다. Android 앱부터 백엔드 서버, 인프라까지 전 영역을 직접 설계하고 구축했습니다.",
-    tags: ["Compose", "Hilt", "CameraX", "FCM"],
+    tags: ["Compose", "Hilt", "CameraX", "FCM", "Spring Boot", "Redis", "n8n"],
     contributions: [
       "Compose 기반 UI 설계 및 전체 화면 구현",
       "CameraX를 활용한 복약 안내서 촬영 및 OCR 연동 플로우 구현",
@@ -14,7 +14,17 @@ const PROJECTS = {
       "FCM 기반 복용 일정 알림 기능 구현",
       "Android 앱·서버·인프라 전 영역을 1인 개발로 구축",
     ],
-    github: "https://github.com/koolunkle/yak-allim-android",
+    challenges: [
+      "서버에서 ONNX Runtime(PP-OCRv4)으로 직접 추론하던 OCR 구조를 n8n 워크플로우(외부 OCR API + LLM) 연동으로 전환했습니다. 이전 구현은 별도 브랜치(archive/onnx-local-ocr)에 보존했습니다.",
+      "분석 요청은 작업 ID와 함께 202 Accepted를 즉시 반환하는 비동기 구조로 처리하고, 진행률은 SSE로, 완료·실패는 FCM으로 전달했습니다.",
+      "블루-그린 배포 중에도 진행 중인 작업이 끊기지 않도록 작업 상태를 서버 밖 Redis에 두고, Redis Pub/Sub로 모든 서버 인스턴스의 SSE에 진행 이벤트를 전달했습니다.",
+    ],
+    github: [
+      { label: "Android", url: "https://github.com/koolunkle-yak-allim/yak-allim-android" },
+      { label: "Server", url: "https://github.com/koolunkle-yak-allim/yak-allim-server" },
+      { label: "Infra", url: "https://github.com/koolunkle-yak-allim/yak-allim-infra" },
+      { label: "Landing", url: "https://github.com/koolunkle-yak-allim/yak-allim-landing" },
+    ],
   },
   xitefleet: {
     title: "사이트플릿",
@@ -92,7 +102,7 @@ const PROJECTS = {
       "회원 관리(가입/로그인) 기능 구현",
     ],
     github:
-      "https://github.com/koolunkle/mobile-lab/tree/main/android/training/mirae-it-campus/team-projects/cinema-storage",
+      "https://github.com/koolunkle/native-mobile-archive/tree/main/android/training/mirae-it-campus/team-projects/cinema-storage",
   },
   "gudok-in": {
     title: "구독in",
@@ -104,6 +114,6 @@ const PROJECTS = {
     tags: ["소셜 로그인", "장바구니"],
     contributions: ["소셜 로그인 기능 구현", "장바구니 기능 구현"],
     github:
-      "https://github.com/koolunkle/mobile-lab/tree/main/android/training/nepp-plus/team-projects/gudok-in",
+      "https://github.com/koolunkle/native-mobile-archive/tree/main/android/training/nepp-plus/team-projects/gudok-in",
   },
 };

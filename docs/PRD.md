@@ -57,13 +57,13 @@
 
 | 프로젝트명 | 카테고리 | 기간 | 기술 스택 | GitHub |
 | --- | --- | --- | --- | --- |
-| 약올림 (Yak-Allim) | 개인 프로젝트 | - | Compose, Hilt, CameraX, FCM | [koolunkle/yak-allim-android](https://github.com/koolunkle/yak-allim-android) |
+| 약올림 (Yak-Allim) | 개인 프로젝트 | - | Compose, Hilt, CameraX, FCM, Spring Boot, Redis, n8n | [koolunkle-yak-allim](https://github.com/koolunkle-yak-allim) (Android·Server·Infra·Landing) |
 | 사이트플릿 (XiteFleet) | 커리어 프로젝트 | 2024.12–2025.03 | MVI, Compose, Ktor, Room | 비공개 |
 | 그린팔로우 (GreenFollow) | 커리어 프로젝트 | 2024.08–2024.12 | Flutter, MVVM, BLE, Google Maps | 비공개 |
 | 엠브레인 (M.Brain) | 커리어 프로젝트 | 2024.02–2024.09 | Bluetooth, MediaPlayer, CSV | 비공개 |
 | 당케 | 커리어 프로젝트 | 2023.03–2023.12 | MVVM, Health Connect, 소셜 로그인 | 비공개 |
-| Cinema Storage | 러닝 프로젝트 (팀) | - | Firebase, Realtime Database | [mobile-lab/.../cinema-storage](https://github.com/koolunkle/mobile-lab/tree/main/android/training/mirae-it-campus/team-projects/cinema-storage) |
-| 구독in | 러닝 프로젝트 (팀) | - | 소셜 로그인, 장바구니 | [mobile-lab/.../gudok-in](https://github.com/koolunkle/mobile-lab/tree/main/android/training/nepp-plus/team-projects/gudok-in) |
+| Cinema Storage | 러닝 프로젝트 (팀) | - | Firebase, Realtime Database | [native-mobile-archive/.../cinema-storage](https://github.com/koolunkle/native-mobile-archive/tree/main/android/training/mirae-it-campus/team-projects/cinema-storage) |
+| 구독in | 러닝 프로젝트 (팀) | - | 소셜 로그인, 장바구니 | [native-mobile-archive/.../gudok-in](https://github.com/koolunkle/native-mobile-archive/tree/main/android/training/nepp-plus/team-projects/gudok-in) |
 
 > 프로젝트 설명 및 소속 정보(미래IT캠퍼스·넵플러스IT아카데미 팀 프로젝트 등)는 기존 초안 사이트(my-intro-sand-alpha.vercel.app) 내용을 그대로 이관합니다.
 >
@@ -80,8 +80,8 @@
 | 기본 정보 (설명, 기술스택, 기간, 카테고리) | ✅ 필수 | 리스트 카드 정보 확장 |
 | 담당 역할 및 주요 기여 내용 | ✅ 포함 | 기록된 내용 존재, 바로 반영 가능 |
 | 스크린샷/이미지 갤러리 | ⚠️ 선택적 | **커리어 프로젝트는 보안상 제외** (코드/이미지 노출 불가). 개인/러닝 프로젝트는 있는 경우에만 노출 |
-| 트러블슈팅/기술적 도전 사례 | ⚠️ 필드만 준비 | 현재 미작성, 추후 순차적으로 콘텐츠 채움 |
-| 배운점/회고 | ⚠️ 필드만 준비 | 현재 미작성, 추후 순차적으로 콘텐츠 채움 |
+| 트러블슈팅/기술적 도전 사례 | ⚠️ 필드만 준비 | 데이터(`challenges`, `retrospective`)가 있는 프로젝트에만 섹션 노출 |
+| 배운점/회고 | ⚠️ 필드만 준비 | 데이터(`challenges`, `retrospective`)가 있는 프로젝트에만 섹션 노출 |
 | 성과/지표 | ❌ 제외 | 개인 프로젝트/MVP 단계로 노출할 지표 없음 |
 | GitHub 링크 | ✅ 포함 | 공개 가능한 프로젝트에 한해 |
 
