@@ -24,6 +24,9 @@ function renderProject() {
   if (data.periodLabel) {
     metaHtml.push(`<span class="card-period">${data.periodLabel}</span>`);
   }
+  if (data.award) {
+    metaHtml.push(`<span class="card-award">${data.award}</span>`);
+  }
 
   const tagsHtml = data.tags
     .map((tag) => `<span class="tech-tag">${tag}</span>`)
@@ -37,14 +40,24 @@ function renderProject() {
     : data.github
       ? [{ label: "GitHub", url: data.github }]
       : [];
+  const linkList = (items) =>
+    `<div class="detail-github-list">${items
+      .map(
+        (item) =>
+          `<a class="detail-github" href="${item.url}" target="_blank" rel="noopener">${item.label} ↗</a>`,
+      )
+      .join("")}</div>`;
   const githubHtml = repos.length
-    ? `<div class="detail-github-list">${repos
-        .map(
-          (repo) =>
-            `<a class="detail-github" href="${repo.url}" target="_blank" rel="noopener">${repo.label} ↗</a>`,
-        )
-        .join("")}</div>`
+    ? linkList(repos)
     : `<span class="detail-github is-disabled">비공개 프로젝트 — 코드 및 이미지는 공개하지 않습니다</span>`;
+  // links: 운영 서비스, 시연 영상 등 GitHub 외 링크 ({ label, url } 배열)
+  const linksHtml = data.links && data.links.length
+    ? `
+      <section class="detail-section" data-reveal>
+        <h2 class="detail-section-title">서비스 및 시연</h2>
+        ${linkList(data.links)}
+      </section>`
+    : "";
 
   // 내용이 있는 프로젝트에만 섹션을 보여준다 (문자열 배열)
   const optionalSection = (title, items) =>
@@ -77,6 +90,7 @@ function renderProject() {
 
 ${optionalSection("트러블슈팅 / 기술적 도전", data.challenges)}
 ${optionalSection("배운점 / 회고", data.retrospective)}
+${linksHtml}
 
       <section class="detail-section" data-reveal>
         <h2 class="detail-section-title">GitHub</h2>

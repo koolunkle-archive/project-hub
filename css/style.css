@@ -275,6 +275,12 @@ body {
   color: var(--color-subtext);
 }
 
+.card-award {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-point);
+}
+
 .card-title {
   margin-top: 16px;
   font-size: 22px;
@@ -806,4 +812,13 @@ body {
   margin-top: 6px;
   font-size: 14px;
   color: var(--color-subtext);
+}
+
+.timeline-desc a {
+  color: var(--color-point);
+  text-decoration: none;
+}
+
+.timeline-desc a:hover {
+  color: var(--color-point-hover);
 }
