@@ -114,6 +114,7 @@
 - Email: <a43361904@gmail.com>
 - Secondary Email: <gugi329@daum.net>
 - GitHub: [github.com/koolunkle](https://github.com/koolunkle)
+- Instagram: [instagram.com/koolunkle.dev](https://www.instagram.com/koolunkle.dev/)
 
 #### 경력 & 교육 타임라인
 
