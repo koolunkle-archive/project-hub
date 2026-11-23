@@ -64,6 +64,7 @@ function buildProjectHtml(data, { withBack = true } = {}) {
     </header>
 
     <main class="detail-body">
+${optionalSection("만든 계기", data.motivation)}
       <section class="detail-section" data-reveal>
         <h2 class="detail-section-title">담당 역할 및 주요 기여</h2>
         <ul class="detail-list">${contributionsHtml}</ul>

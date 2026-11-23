@@ -57,7 +57,7 @@
 
 | 프로젝트명 | 카테고리 | 기간 | 기술 스택 | GitHub |
 | --- | --- | --- | --- | --- |
-| 약올림 (Yak-Allim) | 개인 프로젝트 | - | Compose, Hilt, CameraX, FCM, Spring Boot, Redis, n8n | [koolunkle-yak-allim](https://github.com/koolunkle-yak-allim) (Android·Server·Infra·Landing) |
+| 약올림 (Yak-Allim) | 개인 프로젝트 | 2026.07–2026.10 | Compose, Hilt, CameraX, FCM, Spring Boot, Redis, n8n | [koolunkle-yak-allim](https://github.com/koolunkle-yak-allim) (Android·Server·Infra·Landing) |
 | 사이트플릿 (XiteFleet) | 커리어 프로젝트 | 2024.12–2025.03 | MVI, Compose, Ktor, Room | 비공개 |
 | 그린팔로우 (GreenFollow) | 커리어 프로젝트 | 2024.08–2024.12 | Flutter, MVVM, BLE, Google Maps | 비공개 |
 | 엠브레인 (M.Brain) | 커리어 프로젝트 | 2024.02–2024.09 | Bluetooth, MediaPlayer, CSV | 비공개 |
@@ -97,8 +97,8 @@
 - 상태 배지: "새로운 팀을 찾고 있습니다" (현재 구직 활동 중 상태를 나타냄, About 페이지 상단에 배치)
 - 한 줄 소개: "안녕하세요, Koolunkle입니다."
 - 소개 문구: "Kotlin · Compose 기반 Android 개발과 Spring Boot 백엔드 개발 경험을 가진 개발자입니다. 문제를 끝까지 파고들어 완성도 있는 결과물을 만드는 것을 좋아합니다."
-- 상세 소개: "동국대학교에서 식품산업관리학과를 졸업한 뒤, 여러 부트캠프 과정을 거쳐 Android 개발자로 커리어를 시작했습니다. 올리브스톤 SW R&D팀에서 안드로이드 앱을 개발하며 그린팔로우 프로젝트에서는 Flutter로 크로스플랫폼 앱도 개발했고, 이후 소프트그램에서는 OCR 솔루션 백엔드 개발을 경험하며 영역을 넓혔습니다. Kotlin과 Compose로 화면을 만드는 일에 강점이 있으며, Spring Boot 백엔드와 Kotlin Multiplatform으로 관심 분야를 넓혀가고 있습니다."
-- 요약 정보: 학교(동국대학교), 전공(식품산업관리학과), 주요 분야(Android · Kotlin · Compose), 관심 분야(Spring Boot · Kotlin Multiplatform)
+- 상세 소개: "동국대학교에서 식품산업관리학과를 졸업한 뒤, 여러 부트캠프 과정을 거쳐 Android 개발자로 커리어를 시작했습니다. 올리브스톤 SW R&D팀에서 안드로이드 앱을 개발하며 그린팔로우 프로젝트에서는 Flutter로 크로스플랫폼 앱도 개발했고, 이후 소프트그램에서는 신규 OCR 서비스의 MVP 백엔드 서버를 단독 개발하며 영역을 넓혔습니다. Kotlin과 Compose로 화면을 만드는 일에 강점이 있으며, Kotlin Multiplatform으로 관심 분야를 넓혀가고 있습니다."
+- 요약 정보: 학교(동국대학교), 전공(식품산업관리학과), 주요 분야(Android · Kotlin · Compose · Spring Boot), 관심 분야(Kotlin Multiplatform)
 - CTA 버튼: "프로젝트 보기", "이메일 보내기"
 
 #### 기술 스택 (Skills 섹션)
@@ -106,8 +106,8 @@
 | 구분 | 항목 |
 | --- | --- |
 | Tool | Android Studio, Visual Studio Code, IntelliJ IDEA |
-| Skill | Kotlin, Java, Android, Dart, Flutter |
-| Interested | Spring Boot |
+| Skill | Kotlin, Java, Spring Boot, Android, Dart, Flutter |
+| Interested | Kotlin Multiplatform |
 
 #### 연락처 (Contact)
 
@@ -125,9 +125,9 @@
 
 | 기간 | 구분 | 내용 | 설명 |
 | --- | --- | --- | --- |
-| 2025.10 – 2026.04 | 근무 | 소프트그램 · 서비스개발팀 백엔드 개발자 | OCR 솔루션 개발에 참여 |
+| 2025.10 – 2026.04 | 근무 | 소프트그램 · 서비스개발팀 백엔드 개발자 | 고객사 솔루션 정기점검, 신규 OCR 서비스 MVP 백엔드 서버 단독 개발 |
 | 2025.06 – 2025.09 | 교육 | 청년취업사관학교 | AI 시대의 자바 백엔드 개발자 양성 과정 수료 |
-| 2023.03 – 2025.05 | 근무 | 올리브스톤 · SW R&D팀 안드로이드 앱 개발자 | 안드로이드 앱 개발 담당 |
+| 2023.03 – 2025.05 | 근무 | 올리브스톤 · SW R&D팀 안드로이드 앱 개발자 | 안드로이드 앱 개발 담당, 헬스케어·건설·골프 등 4개 프로젝트에서 Android 앱 개발 및 유지보수 담당 |
 | 2022.08 – 2023.01 | 교육 | 미래IT캠퍼스 | 안드로이드웹앱클라우드융합개발자 훈련 과정 수료 |
 | 2021.11 – 2021.12 | 교육 | 넵플러스IT아카데미 | 코틀린(Kotlin) 기반 안드로이드 앱 개발자 양성 과정 수료 |
 | 2015.03 – 2021.02 | 학력 | 동국대학교 · 식품산업관리학과 | 식품자원경제학과 |
